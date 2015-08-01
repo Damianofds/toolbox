@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>it.fds.jai-sketches</groupId>
+	<artifactId>jai-sketches</artifactId>
+	<packaging>pom</packaging>
+	<version>0.1-SNAPSHOT</version>
+	<name>jai-sketches</name>
+
+	<modules>
+		<module>jsk-santos-tutorial</module>
+	</modules>
+
+	<scm>
+		<connection>scm:git@github.com:Damianofds/toolbox.git</connection>
+		<developerConnection>scm:git@github.com:Damianofds/toolbox.git</developerConnection>
+		<url>https://github.com/Damianofds/toolbox</url>
+	</scm>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+
+	<organization>
+		<name>fds</name>
+		<url>https://github.com/Damianofds</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>fds</id>
+			<name>Damiano Giampaoli</name>
+			<email>damianofds@gmail.com</email>
+			<url/>
+			<organization>fds</organization>
+			<organizationUrl>https://github.com/Damianofds</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>Rome</timezone>
+		</developer>
+	</developers>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- Apache stuff -->
+			<dependency>
+				<groupId>commons-configuration</groupId>
+				<artifactId>commons-configuration</artifactId>
+				<version>1.10</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>2.6</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>3.2.1</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>2.4</version>
+			</dependency>
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.17</version>
+			</dependency>
+
+			<!-- JAI stuff -->
+			<dependency>
+				<groupId>javax.media</groupId>
+				<artifactId>jai_core</artifactId>
+				<version>1.1.3</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.media</groupId>
+				<artifactId>jai-codec</artifactId>
+				<version>1.1.3</version>
+			</dependency>
+
+			<!-- test stuff -->
+			<dependency>
+				<groupId>org.geotools</groupId>
+				<artifactId>gt-sample-data</artifactId>
+				<version>13.2</version>
+			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.12</version>
+				<scope>test</scope>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<repositories>
+		<repository>
+			<id>jboss-3rd-party-releases</id>
+			<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases/</url>
+		</repository>
+		<repository>
+			<id>osgeo</id>
+			<name>Open Source Geospatial Foundation Repository</name>
+			<url>http://download.osgeo.org/webdav/geotools/</url>
+		</repository>
+	</repositories>
+
+</project>
