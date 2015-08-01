@@ -1,2 +1,2 @@
 # toolbox
-just some ready to use boilerplate
+Just some personal ready-to-use boilerplate and exercises.
