@@ -1,5 +1,7 @@
 package it.fds.toolbox;
 
+import java.awt.BorderLayout;
+import java.awt.Container;
 import java.awt.Point;
 import java.awt.image.ColorModel;
 import java.awt.image.DataBuffer;
@@ -15,11 +17,16 @@ import javax.media.jai.PlanarImage;
 import javax.media.jai.RasterFactory;
 import javax.media.jai.RenderedOp;
 import javax.media.jai.TiledImage;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
 
 import org.apache.log4j.Logger;
 import org.geotools.test.TestData;
 import org.junit.Assert;
 import org.junit.Test;
+
+import com.sun.media.jai.widget.DisplayJAI;
 
 /**
  * Handy overview of the JAI usage
@@ -129,7 +136,7 @@ public class JAIBasicsUsages extends Assert {
         // The created file is automatically deleted after this method ends.
         assertNotNull(outImg);
     }
-
+    
     @Test
     public void infoTest() throws FileNotFoundException, IOException {
 

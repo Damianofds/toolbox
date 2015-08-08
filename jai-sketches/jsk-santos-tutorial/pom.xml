@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>it.fds.jai-sketches</groupId>
-	<artifactId>santos-tutorial</artifactId>
+	<artifactId>jsk-santos-tutorial</artifactId>
 	<packaging>jar</packaging>
 	<version>0.1-SNAPSHOT</version>
-	<name>santos-tutorial</name>
+	<name>jsk-santos-tutorial</name>
 
 	<dependencies>
 
