@@ -1,6 +1,6 @@
-### Basic java app template
+### Spring java webapp template
 
-A Maven template to startup a flat multimodule projects.
+A Maven template to startup a spring4ish webapp project
 
 ####Features:
 * Compiler plugin usage and well formatted root pom
