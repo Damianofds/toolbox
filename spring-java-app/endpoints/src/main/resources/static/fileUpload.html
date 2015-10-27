@@ -1,5 +1,6 @@
 <html>
 <body>
+    <h3>Upload a file</h3>
 	<form method="POST" enctype="multipart/form-data"
 		action="/upload">
 		File to upload: <input type="file" name="file"><br /> Name: <input
@@ -7,8 +8,18 @@
 			value="Upload"> Press here to upload the file!
 	</form>
 	
+	
+	<h3>Upload an image and get it as a response</h3>
 	<form method="POST" enctype="multipart/form-data"
 		action="/uploadAndProcess">
+		File to upload: <input type="file" name="file"><br /> Name: <input
+			type="text" name="name"><br /> <br /> <input type="submit"
+			value="Upload"> Press here to upload the file!
+	</form>
+	
+	<h3>Upload an image and process it with potrace</h3>
+	<form method="POST" enctype="multipart/form-data"
+		action="/potraceIt">
 		File to upload: <input type="file" name="file"><br /> Name: <input
 			type="text" name="name"><br /> <br /> <input type="submit"
 			value="Upload"> Press here to upload the file!
