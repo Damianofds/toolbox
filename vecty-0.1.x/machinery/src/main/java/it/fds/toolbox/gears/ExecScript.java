@@ -17,7 +17,6 @@ import org.springframework.stereotype.Component;
 
 import it.fds.toolbox.utils.TimeCounter;
 
-@Component
 public class ExecScript {
 
     private final Logger LOGGER = Logger.getLogger(ExecScript.class);
