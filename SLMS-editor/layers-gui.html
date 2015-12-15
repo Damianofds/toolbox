@@ -13,7 +13,7 @@
     <div id='title' style="width:800px; margin:0 auto;"><h1>SLMS - layers.json generator</h1></div>
     
     <div id='editor_holder' style="width:800px; margin:0 auto;"></div>
-    
+    <button id="submit">Submit (console.log)</button>
     <script>
       // Initialize the editor with a JSON schema        disable_edit_json: 'true',
       JSONEditor.defaults.options.theme = 'bootstrap3';
@@ -21,6 +21,8 @@
     {theme : 'bootstrap3',
     iconlib: 'bootstrap3',
     disable_properties: 'true',
+    disable_collapse: 'true',
+    disable_edit_json: 'true',
     schema:
     
     
@@ -32,6 +34,7 @@
     "wmsLayers": {
       "id": "http://jsonschema.net/wmsLayers",
       "type": "array",
+      "format": "table",
       "items": {
         "id": "http://jsonschema.net/wmsLayers/2",
         "type": "object",
@@ -74,9 +77,11 @@
     "portalLayers": {
       "id": "http://jsonschema.net/portalLayers",
       "type": "array",
+      "format": "tabs",
       "items": {
         "id": "http://jsonschema.net/portalLayers/2",
         "type": "object",
+        "format":"grid",
         "properties": {
           "id": {
             "id": "http://jsonschema.net/portalLayers/2/id",
@@ -94,6 +99,7 @@
           "layers": {
             "id": "http://jsonschema.net/portalLayers/2/layers",
             "type": "array",
+            "format":"table",
             "items": {
               "id": "http://jsonschema.net/portalLayers/2/layers/0",
               "type": "string"
@@ -110,9 +116,11 @@
     "groups": {
       "id": "http://jsonschema.net/groups",
       "type": "array",
+      "format": "tabs",
       "items": {
         "id": "http://jsonschema.net/groups/1",
         "type": "object",
+        "format": "grid",
         "properties": {
           "id": {
             "id": "http://jsonschema.net/groups/1/id",
@@ -130,6 +138,7 @@
           "portalLayers": {
             "id": "http://jsonschema.net/groups/1/items",
             "type": "array",
+            "format": "table",
             "items": {
               "id": "http://jsonschema.net/groups/1/items/0",
               "type": "string"
@@ -155,5 +164,6 @@
         console.log(editor.getValue());
       });
     </script>
+    
   </body>
 </html>
